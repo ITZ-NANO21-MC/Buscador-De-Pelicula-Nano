@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-film"></i> Buscador de Películas</h1>
+            <p>Encuentra información sobre cualquier película</p>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar películas...">
+                <button id="search-button"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+            
+            <div class="filters">
+                <select id="type-filter">
+                    <option value="">Todos los tipos</option>
+                    <option value="movie">Películas</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episodios</option>
+                </select>
+                
+                <select id="year-filter">
+                    <option value="">Todos los años</option>
+                    <!-- Los años se llenarán dinámicamente con JavaScript -->
+                </select>
+            </div>
+        </header>
+        
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Buscando películas...</p>
+        </div>
+        
+        <div id="error-message" class="error-message"></div>
+        
+        <div id="results-container" class="results-container"></div>
+        
+        <div id="pagination" class="pagination"></div>
+        
+        <div id="movie-details" class="movie-details hidden">
+            <button id="close-details" class="close-btn"><i class="fas fa-times"></i></button>
+            <div class="details-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
