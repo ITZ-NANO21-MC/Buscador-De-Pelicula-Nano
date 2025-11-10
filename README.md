@@ -21,7 +21,7 @@ Un buscador de películas que se conecta a la API de OMDB para obtener informaci
 ## Instalación y uso
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/ITZ-NANO21-MC/Buscador-De-Pelicula-Nano
+git clone https://github.com/ITZ-NANO21-MC/Buscador-De-Pelicula-Nano.git
 ```
 
 2. Abre el archivo `index.html` en cualquier navegador moderno
